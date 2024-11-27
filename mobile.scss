@@ -1,0 +1,38 @@
+.container {
+    /* logo and bluetooth */
+    > .row {
+        &:first-child  {
+            border: 1px solid white;
+
+            div[class*='col'] {
+                flex: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &:nth-child(3) {
+            border: 1px solid yellow;
+            .image-editor {
+                > .row {
+                    /* main icons */
+                    &:nth-child(2) {
+                        position: fixed;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 1030;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    max-width: 100vw !important;
+}
+
+.footer {
+    display: none;
+}
