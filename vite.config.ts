@@ -21,9 +21,9 @@ export default defineConfig({
         manualChunks: {
           fabric: ["fabric"],
         },
-        chunkFileNames: () => {
-          return "assets/[name].[hash].js";
-        },
+        chunkFileNames: "assets/niimblue/[name].[hash].js",
+        assetFileNames: "assets/niimblue/[name].[hash][extname]",
+        entryFileNames: "assets/niimblue/[name].[hash].js",
       },
     },
   },
